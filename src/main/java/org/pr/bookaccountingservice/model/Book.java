@@ -13,11 +13,12 @@ public class Book {
     @Column(nullable = false)
     private String title;
 
-    private int year;
+    private Integer publicationYear;
 
     private String genre;
 
     @ManyToOne
     @JoinColumn(name = "author_id")
     private Author author;
+
 }
